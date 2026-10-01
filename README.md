@@ -1,6 +1,6 @@
 # Lumos: Stable Diffusion inference in PyTorch
 
-A from-scratch reproduction of **Stable Diffusion v1.5 inference** in plain PyTorch, built to understand how latent diffusion works end to end. It loads the official v1.5 weights into hand-written modules (VAE, CLIP text encoder, U-Net and DDPM sampler) and generates 512 × 512 images from a text prompt or from an input image.
+A from-scratch reproduction of **Stable Diffusion v1.5 inference** in plain PyTorch, built to understand how latent diffusion works end to end. It loads the official v1.5 weights into modules written directly in PyTorch, without the diffusers library (VAE, CLIP text encoder, U-Net and DDPM sampler), and generates 512 × 512 images from a text prompt or from an input image.
 
 > **Credit.** This code follows Umar Jamil's *Coding Stable Diffusion from scratch in PyTorch*
 > ([video](https://www.youtube.com/watch?v=ZBKpAp_6TGI), [repository](https://github.com/hkproj/pytorch-stable-diffusion)).
