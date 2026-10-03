@@ -6,11 +6,6 @@ A from-scratch reproduction of **Stable Diffusion v1.5 inference** in plain PyTo
 > ([video](https://www.youtube.com/watch?v=ZBKpAp_6TGI), [repository](https://github.com/hkproj/pytorch-stable-diffusion)).
 > The model and pipeline files are based on his implementation, which is released under the MIT License (see [LICENSE](LICENSE)).
 
-![Generated sample](stable.png)
-
-*"Albert Einstein walking thoughtfully along Oxford University's historic stone corridor, carrying a notebook, highly detailed, ultra sharp, cinematic, soft warm lighting, 8k resolution, wide-angle view…"*
-DDPM sampler, 50 steps, classifier-free guidance scale 8, seed 42. About 14 minutes on a laptop CPU.
-
 ## How it works
 
 1. **Text encoding.** The prompt is tokenized with the CLIP tokenizer and encoded by the CLIP text encoder into a 77 × 768 sequence of embeddings ([`clip.py`](<stable diffusion/clip.py>)).
